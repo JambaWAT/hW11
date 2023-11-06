@@ -18,11 +18,12 @@ public class Main {
         else if (clientOS == 0 && clientDeviceYear >= 2015)
             System.out.println("Установите версию приложения для ios по ссылке");
     }
-    public static void calculateDelivTime(int deliveryDistance){
+    public static int calculateDelivTime(int deliveryDistance){
         if (deliveryDistance <= 20) System.out.println("Доставка займет 1 день");
         else if (deliveryDistance > 20 && deliveryDistance <= 60) System.out.println("Доставка займет 2 дня");
         else if (deliveryDistance > 60 && deliveryDistance <= 100) System.out.println("Доставка займет 3 дня");
         else System.out.println("Доставка дальше 100 км не идет");
+        return deliveryDistance;
     }
 
 
